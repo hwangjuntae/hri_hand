@@ -1,0 +1,126 @@
+<!-- finger3 link -->
+<link name="finger3_motor_shaft">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.1"/>
+    <inertia ixx="0" iyy="0" izz="0" ixy="0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find hri_hand)/meshes/motor_shaft_extension.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find hri_hand)/meshes/motor_shaft_extension.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <selfCollide>false</selfCollide>
+  </collision>
+</link>
+
+<link name="finger3_motor_link">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.1"/>
+    <inertia ixx="0" iyy="0" izz="0" ixy="0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find hri_hand)/meshes/motor_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find hri_hand)/meshes/motor_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <selfCollide>false</selfCollide>
+  </collision>
+</link>
+
+<link name="finger3_mid_1">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.1"/>
+    <inertia ixx="0" iyy="0" izz="0" ixy="0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find hri_hand)/meshes/mid_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find hri_hand)/meshes/mid_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <selfCollide>false</selfCollide>
+  </collision>
+</link>
+
+<link name="finger3_link_2">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.1"/>
+    <inertia ixx="0" iyy="0" izz="0" ixy="0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find hri_hand)/meshes/link_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find hri_hand)/meshes/link_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <selfCollide>false</selfCollide>
+  </collision>
+</link>
+
+<link name="finger3_finger_end">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.1"/>
+    <inertia ixx="0" iyy="0" izz="0" ixy="0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find hri_hand)/meshes/finger_end.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find hri_hand)/meshes/finger_end.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <selfCollide>false</selfCollide>
+  </collision>
+</link>
+
+<link name="finger3_finger_end_sensor">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.1"/>
+    <inertia ixx="0" iyy="0" izz="0" ixy="0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find hri_hand)/meshes/finger_end_sensor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find hri_hand)/meshes/finger_end_sensor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <selfCollide>false</selfCollide>
+  </collision>
+</link>
